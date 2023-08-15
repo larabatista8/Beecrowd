@@ -11,7 +11,7 @@ int main() {
  
  
  for(i=0; i<n; i++){
-     if(vet[i]>maior)maior=vet[i];
+     if(*(vet+i)>maior)maior=*(vet+i);
  }
    if(maior<10) printf("1\n");
     else if (maior>=10 && maior<20) printf("2\n");
